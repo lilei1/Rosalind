@@ -13,9 +13,8 @@ def count_bp(seq):
 file_path = sys.argv[1]
 with open(file_path,'r') as F:
     for line in F:
-        if line.startswith('>'):
-            next;
-        else:
+        line =line.strip()
+        if not line.startswith('>'):
             line += line
 
     print(count_bp(line))

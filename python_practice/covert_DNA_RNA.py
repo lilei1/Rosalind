@@ -8,11 +8,11 @@ def dna2rna(seq):
 
 file = sys.argv[1]
 
+dna_seq = ""
 with open (file,'r') as F:
     for line in F:
-        if line.startswith('>'):
-            next;
-        else:
-            line += line
+        line =line.strip()
+        if not line.startswith('>'):
+            dna_seq += line
             
-    print (dna2rna(line))
+print (dna2rna(dna_seq))
