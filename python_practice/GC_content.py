@@ -24,6 +24,7 @@ with open (file, 'r') as F:
             #save the previous sequence before moving to a new one
             if current_id and current_seq:
                 GC_dict[current_id] = GC_content(current_seq)
+                #GC_dict[current_id] = current_seq
             #seqID = line.replace('>','')
         #else:
         #start a new sequence
@@ -34,7 +35,9 @@ with open (file, 'r') as F:
     #don' forgot to process the last sequence
     if current_id and current_seq:
         GC_dict[current_id] = GC_content(current_seq)
+        #GC_dict[current_id] = current_seq
 
+#print (GC_dict)
 max_value = max(GC_dict.values())
 max_keys = [key for key, value in GC_dict.items() if value == max_value][0]
 
