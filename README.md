@@ -193,5 +193,9 @@ AAD
 AAN
 AAA
 
+#solution:
+```
+python3 enu_kmer_lexi_recursive.py rosalind_lexv.txt >out
+```
 ---
 
