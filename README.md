@@ -232,5 +232,9 @@ Sample Dataset
 Sample Output
 19
 
+```
+python3 wascallywabbits.py rosalind_fib.txt
+20444528200
+```
 ---
 
