@@ -1,7 +1,7 @@
 # Rosalind
 This is for practice to coding to solve bioinformatics problems
 
-Problem 1
+### Problem 1
 A string is simply an ordered collection of symbols selected from some alphabet and formed into a word; the length of a string is the number of symbols that it contains.
 
 An example of a length 21 DNA string (whose alphabet contains the symbols 'A', 'C', 'G', and 'T') is "ATGCTTCAGAAAGGTCTTACG."
@@ -18,7 +18,7 @@ Sample Output
 20 12 17 21
 
 
-Problem2: 
+### Problem2: 
 
 The Second Nucleic Acidclick to expand
 Problem
@@ -42,7 +42,7 @@ Sample Output
 GAUGGAACUUGACUACGUAAAUU
 
 
-#problem3:
+### problem3:
 
 The Secondary and Tertiary Structures of DNAclick to expand
 Problem
@@ -65,7 +65,7 @@ AAAACCCGGT
 Sample Output
 ACCGGGTTTT
 
-Problem 4
+### Problem 4
 The GC-content of a DNA string is given by the percentage of symbols in the string that are 'C' or 'G'. For example, the GC-content of "AGCTATAG" is 37.5%. Note that the reverse complement of any DNA string has the same GC-content.
 
 DNA strings must be labeled when they are consolidated into a database. A commonly used method of string labeling is called FASTA format. In this format, the string is introduced by a line that begins with '>', followed by some labeling information. Subsequent lines contain the string itself; the first line to begin with '>' indicates the label of the next string.
@@ -90,7 +90,7 @@ Sample Output
 Rosalind_0808
 60.919540
 
-Problem 5: 
+### Problem 5: 
 Evolution as a Sequence of Mistakesclick to expand
 Problem
 
@@ -118,7 +118,7 @@ Sample Output
 
 ---
 
-###Organizing Strings of Different Lengthsclick to expand
+### Problem 6 Organizing Strings of Different Lengthsclick to expand
 Problem
 Say that we have strings s=s1s2⋯sm
  and t=t1t2⋯tn
@@ -199,7 +199,7 @@ python3 enu_kmer_lexi_recursive.py rosalind_lexv.txt >out
 ```
 ---
 
-##problem
+### problem 7
 Rabbits and Recurrence Relations 
 Problem
 A sequence is an ordered collection of objects (usually numbers), which are allowed to repeat. Sequences can be finite or infinite. Two examples are the finite sequence (π,−2‾√,0,π)
@@ -238,7 +238,7 @@ python3 wascallywabbits.py rosalind_fib.txt
 ```
 ---
 
-###
+### Problem 8
 Finding a Most Likely Common Ancestorclick to collapse
 In “Counting Point Mutations”, we calculated the minimum number of symbol mismatches between two strings of equal length to model the problem of finding the minimum number of point mutations occurring on the evolutionary path between two homologous strands of DNA. If we instead have several homologous strands that we wish to analyze simultaneously, then the natural problem is to find an average-case strand to represent the most likely common ancestor of the given strands.
 
@@ -311,3 +311,26 @@ T: 1 5 0 0 0 1 1 6
 ```
 
 ---
+
+### Problem 9
+Translating RNA into Protein solved by 29094
+July 1, 2012, 5 p.m. by Rosalind Team
+
+The Genetic Codeclick to expand
+Problem
+The 20 commonly occurring amino acids are abbreviated by using 20 letters from the English alphabet (all letters except for B, J, O, U, X, and Z). Protein strings are constructed from these 20 symbols. Henceforth, the term genetic string will incorporate protein strings along with DNA strings and RNA strings.
+
+The RNA codon table dictates the details regarding the encoding of specific codons into the amino acid alphabet.
+
+Given: An RNA string s
+ corresponding to a strand of mRNA (of length at most 10 kbp).
+
+Return: The protein string encoded by s
+.
+
+Sample Dataset
+AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA
+Sample Output
+MAMAPRTEINSTRING
+
+--- 
