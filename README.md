@@ -17,6 +17,7 @@ AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
 Sample Output
 20 12 17 21
 
+---
 
 ### Problem2: 
 
@@ -41,6 +42,7 @@ GATGGAACTTGACTACGTAAATT
 Sample Output
 GAUGGAACUUGACUACGUAAAUU
 
+---
 
 ### problem3:
 
@@ -65,6 +67,7 @@ AAAACCCGGT
 Sample Output
 ACCGGGTTTT
 
+---
 ### Problem 4
 The GC-content of a DNA string is given by the percentage of symbols in the string that are 'C' or 'G'. For example, the GC-content of "AGCTATAG" is 37.5%. Note that the reverse complement of any DNA string has the same GC-content.
 
@@ -89,6 +92,8 @@ TGGGAACCTGCGGGCAGTAGGTGGAAT
 Sample Output
 Rosalind_0808
 60.919540
+
+---
 
 ### Problem 5: 
 Evolution as a Sequence of Mistakesclick to expand
@@ -333,4 +338,45 @@ AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA
 Sample Output
 MAMAPRTEINSTRING
 
+```
+python3 RNA_to_protein.py rosalind_prot.txt
+```
+
 --- 
+
+### Problem 10
+Finding a Protein Motif solved by 6538
+Dec. 3, 2012, 11:02 p.m. by Rosalind TeamTopics: File Formats, Proteomics
+←→
+Motif Implies Functionclick to expand
+Problem
+To allow for the presence of its varying forms, a protein motif is represented by a shorthand as follows: [XY] means "either X or Y" and {X} means "any amino acid except X." For example, the N-glycosylation motif is written as N{P}[ST]{P}.
+
+You can see the complete description and features of a particular protein by its access ID "uniprot_id" in the UniProt database, by inserting the ID number into
+
+http://www.uniprot.org/uniprot/uniprot_id
+Alternatively, you can obtain a protein sequence in FASTA format by following
+
+http://www.uniprot.org/uniprot/uniprot_id.fasta
+For example, the data for protein B5ZC00 can be found at http://www.uniprot.org/uniprot/B5ZC00.
+
+Given: At most 15 UniProt Protein Database access IDs.
+
+Return: For each protein possessing the N-glycosylation motif, output its given access ID followed by a list of locations in the protein string where the motif can be found.
+
+Sample Dataset
+A2Z669
+B5ZC00
+P07204_TRBM_HUMAN
+P20840_SAG1_YEAST
+Sample Output
+B5ZC00
+85 118 142 306 395
+P07204_TRBM_HUMAN
+47 115 116 382 409
+P20840_SAG1_YEAST
+79 109 135 248 306 348 364 402 485 501 614
+
+
+---
+
