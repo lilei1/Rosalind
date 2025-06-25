@@ -396,5 +396,9 @@ ATATCGTTTTATCGTT
 Sample Output
 TATCGTT
 
+```
+python3 find_longest_repeat.py rosalind_ba9d.txt 
+GACCTTAAAATAGCGCTAGATTCGGCTACAGAGCACAATCTGCAAGGTTCGAGCAGT
+```
 ---
 
